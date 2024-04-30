@@ -53,6 +53,23 @@ This Django project provides an API for managing vendors, purchase orders, and c
     - Admin Interface: [http://localhost:8000/admin/](http://localhost:8000/admin/)
     - Log in using the superuser credentials created earlier.
 
+## Additional Technical Considerations
+
+- **Efficient Calculation**: Ensure that the logic for calculating metrics is optimized to handle large datasets without significant performance issues.
+- **Data Integrity**: Include checks to handle scenarios like missing data points or division by zero in calculations to maintain data integrity.
+- **Real-time Updates**: Consider using Django signals to trigger metric updates in real-time when related PO data is modified. This ensures that performance metrics are always up-to-date.
+
+## Additional Notes
+
+- Ensure that the Django development server is running while testing the API endpoints.
+- Make sure to obtain authentication tokens before accessing secured endpoints.
+- Follow RESTful principles when making requests to the API.
+- Ensure proper data validation to maintain data integrity.
+
+## Python Version
+
+This project is developed using Python 3.x.
+
 ## API Endpoints
 
 - **purchase_orders**
